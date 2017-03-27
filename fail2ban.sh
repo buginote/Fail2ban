@@ -163,12 +163,12 @@ if [ ${OS} == CentOS ]; then
   if [ ${CentOS_RHEL_version} == 7 ]; then
     systemctl restart sshd
   else
-    service ssh restart
+    service sshd restart
   fi
 fi
 
 if [[ ${OS} =~ ^Ubuntu$|^Debian$ ]]; then
-  service ssh restart
+  service sshd restart
 fi
 echo ""
 echo "More help is available in our QQ Group : 277717865"
